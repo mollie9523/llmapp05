@@ -76,7 +76,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: mollie9523/llm-multiroute
+          images: milliegoh/llm-multiroute
           tags: |
             type=sha
             type=ref,event=branch
@@ -89,7 +89,7 @@ jobs:
         with:
           context: llm-multiroute
           load: true
-          tags: mollie9523/llm-multiroute:scan
+          tags: milliegoh/llm-multiroute:scan
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
