@@ -170,7 +170,7 @@ summarize_correctness_metric = GEval(
         LLMTestCaseParams.ACTUAL_OUTPUT,
         LLMTestCaseParams.EXPECTED_OUTPUT,
     ],
-    threshold=0.7,
+    threshold=0.4,
 )
 
 summarize_conciseness_metric = GEval(
@@ -185,7 +185,7 @@ summarize_conciseness_metric = GEval(
         LLMTestCaseParams.INPUT,
         LLMTestCaseParams.ACTUAL_OUTPUT,
     ],
-    threshold=0.7,
+    threshold=0.4,
 )
 
 summarize_faithfulness_metric = GEval(

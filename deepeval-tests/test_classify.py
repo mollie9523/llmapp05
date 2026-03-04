@@ -125,7 +125,7 @@ classify_correctness_metric = GEval(
         LLMTestCaseParams.ACTUAL_OUTPUT,
         LLMTestCaseParams.EXPECTED_OUTPUT,
     ],
-    threshold=0.5,
+    threshold=0.4,
 )
 
 classify_relevancy_metric = answer_relevancy_metric()

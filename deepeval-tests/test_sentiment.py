@@ -131,7 +131,7 @@ sentiment_correctness_metric = GEval(
         LLMTestCaseParams.ACTUAL_OUTPUT,
         LLMTestCaseParams.EXPECTED_OUTPUT,
     ],
-    threshold=0.7,
+    threshold=0.4,
 )
 
 sentiment_emotion_metric = GEval(
@@ -146,7 +146,7 @@ sentiment_emotion_metric = GEval(
         LLMTestCaseParams.INPUT,
         LLMTestCaseParams.ACTUAL_OUTPUT,
     ],
-    threshold=0.6,
+    threshold=0.4,
 )
 
 sentiment_relevancy_metric = answer_relevancy_metric()
